@@ -16,7 +16,7 @@
     "BIN_DIR := bin\n" \
     "OUT := $(BIN_DIR)/&OUT&\n" \
     "INCFLAGS := -Isrc\n" \
-    "SRC := $(wildcard *.cpp */*.cpp */*/*.cpp */*/*/*.cpp)\n" \
+    "SRC := $(wildcard *.c */*.c */*/*.c */*/*/*.c)\n" \
     "OBJ := $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC))\n" \
 "\n" \
     "all: create_dirs $(OBJ) $(OUT)\n" \
